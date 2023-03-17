@@ -7,7 +7,7 @@ module.exports = {
   usage: "udictionary <text>",
   react: "🍁",
   category: "Essentials",
-  start: async (Miku, m, { pushName, prefix, args, text }) => {
+  start: async (Xtroid, m, { pushName, prefix, args, text }) => {
     if (!args[0])
       return m.reply(
         `Please provide me a text to search in Urban Dictionary !`
@@ -22,7 +22,7 @@ module.exports = {
           .replace(/\[/g, "")
           .replace(/\]/g, "")}\n`;
 
-        Miku.sendMessage(
+        Xtroid.sendMessage(
           m.from,
           { image: { url: botImage1 }, caption: text },
           { quoted: m }

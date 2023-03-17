@@ -12,7 +12,7 @@ const ty = eco.connect(config.mongodb);
     category: "Economy",  
     react: "💸", 
     start: async ( 
-        Miku, 
+        Xtroid, 
         m, 
         { text, prefix} 
     ) => {
@@ -62,7 +62,7 @@ const ty = eco.connect(config.mongodb);
             type: 4
           };
         
-          await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
+          await Xtroid.sendMessage(m.from, buttonMessage, { quoted: m });
         }
          else{
          let deduct = await eco.deduct(user, cara, texts[0]);
@@ -86,7 +86,7 @@ const ty = eco.connect(config.mongodb);
             type: 4
           };
         
-          await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
+          await Xtroid.sendMessage(m.from, buttonMessage, { quoted: m });
         }
     }
 }

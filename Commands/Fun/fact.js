@@ -6,7 +6,7 @@ module.exports = {
   desc: "Give a random fact.",
   react: "🍁",
   category: "Fun",
-  start: async (Miku, m, { pushName, prefix }) => {
+  start: async (Xtroid, m, { pushName, prefix }) => {
     await axios
       .get(`https://nekos.life/api/v2/fact`)
       .then((response) => {
@@ -28,7 +28,7 @@ module.exports = {
           headerType: 4,
         };
 
-        Miku.sendMessage(m.from, buttonMessage, { quoted: m });
+        Xtroid.sendMessage(m.from, buttonMessage, { quoted: m });
       })
       .catch((err) => {
         m.reply(`An error occurred.`);

@@ -11,14 +11,14 @@ module.exports = {
     category: "Economy",  
     react: "💴", 
     start: async ( 
-        Miku, 
+        Xtroid, 
       m, 
       { text, prefix, mentionByTag, pushName } 
     ) => {
         let value = text.trim().split(" ");
     if (value[0] === "") return m.reply(`Use ${prefix}transfer 100 @user`);
     if (!text && !m.quoted) {
-      return Miku.sendMessage(
+      return Xtroid.sendMessage(
         m.from,
         { text: `Please tag any user ${pushName} senpai 🤦‍♂️ !` },
         { quoted: m }
@@ -67,6 +67,6 @@ module.exports = {
             type: 4
           };
         
-          await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
+          await Xtroid.sendMessage(m.from, buttonMessage, { quoted: m });
         }
     }

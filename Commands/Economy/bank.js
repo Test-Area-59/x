@@ -11,7 +11,7 @@ module.exports = {
     category: "Economy",  
     react: "🏦", 
     start: async ( 
-        Miku, 
+        Xtroid, 
       m, 
       { text, prefix} 
     ) => {
@@ -54,6 +54,6 @@ module.exports = {
             type: 4
           };
         
-          await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
+          await Xtroid.sendMessage(m.from, buttonMessage, { quoted: m });
         }
     }

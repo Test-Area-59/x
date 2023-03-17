@@ -12,12 +12,12 @@ module.exports = {
     category: "Economy",  
     react: "💳", 
     start: async ( 
-        Miku, 
+        Xtroid, 
         m, 
         { text, prefix, isBotAdmin, isAdmin, mentionByTag, pushName, isCreator} 
     ) => {
         if(!text)  {
-            return Miku.sendMessage( 
+            return Xtroid.sendMessage( 
                 m.from, 
                 { text: `*Provide the amount you want to withdraw!*` }, 
                 { quoted: m } 
@@ -27,9 +27,9 @@ module.exports = {
         const query = text.trim();
         const cara = 'cara'
         const withdraw = await eco.withdraw(user, cara, query);
-        if(withdraw.noten) Miku.sendMessage(m.from, { text: '*🏧 Insufficient fund in bank*' }, { quoted: m });
+        if(withdraw.noten) Xtroid.sendMessage(m.from, { text: '*🏧 Insufficient fund in bank*' }, { quoted: m });
         const add = eco.give(user, cara, query);
-        Miku.sendMessage(m.from, { image: fs.readFileSync("./Assets/Img/card.png"), caption: `*🏧 ALERT*  _💶 ${withdraw.amount} has been added in your wallet._*` }, { quoted: m });
+        Xtroid.sendMessage(m.from, { image: fs.readFileSync("./Assets/Img/card.png"), caption: `*🏧 ALERT*  _💶 ${withdraw.amount} has been added in your wallet._*` }, { quoted: m });
         
 }
 }

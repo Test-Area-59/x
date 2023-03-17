@@ -9,7 +9,7 @@ module.exports = {
     category: "Economy",  
     react: "🎰", 
     start: async ( 
-        Miku, 
+        Xtroid, 
         m, 
         { text, prefix} 
     ) => {

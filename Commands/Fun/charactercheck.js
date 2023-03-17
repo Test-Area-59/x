@@ -6,12 +6,12 @@ module.exports = {
   react: "😂",
   category: "Fun",
   start: async (
-    Miku,
+    Xtroid,
     m,
     { text, prefix, args, mentionedJid, mentionByTag }
   ) => {
     if (!text)
-      return Miku.sendMessage(
+      return Xtroid.sendMessage(
         m.from,
         { text: `Please tag a user to use this command!` },
         { quoted: m }
@@ -39,7 +39,7 @@ module.exports = {
       mentionedUser.split("@")[0]
     }\n\nAnswer : *${userCharacterSeletion}*`;
 
-    Miku.sendMessage(
+    Xtroid.sendMessage(
       m.from,
       {
         image: { url: botImage3 },

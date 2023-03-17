@@ -14,11 +14,11 @@ module.exports = {
     category: "Economy",  
     react: "💷", 
     start: async ( 
-        Miku, 
+        Xtroid, 
       m, 
       { text, prefix} 
     ) => {
-         if (!m.isGroup) return Miku.sendMessage(m.from, { text: '*Group command ' }, { quoted: m });
+         if (!m.isGroup) return Xtroid.sendMessage(m.from, { text: '*Group command ' }, { quoted: m });
          let user = m.sender 
          const cara = "cara"
          const daily  = await eco.daily(user, cara, 500); //give 500 for daily, can be changed
@@ -45,11 +45,11 @@ module.exports = {
                 type: 4
               };
             
-              await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
+              await Xtroid.sendMessage(m.from, buttonMessage, { quoted: m });
             
             } else {
    
-              return Miku.sendMessage( 
+              return Xtroid.sendMessage( 
                 m.from, 
                 { text: `You have successfully claimed your daily revenue ${daily.amount} 💴 today 🎉.` }, 
                 { quoted: m } 

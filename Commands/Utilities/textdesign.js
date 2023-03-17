@@ -7,9 +7,9 @@ module.exports = {
     category: "Media",
     usage: `fonts <text>`,
     react: "🍁",
-    start: async (Miku, m, { text, prefix, args, mime }) => {
+    start: async (Xtroid, m, { text, prefix, args, mime }) => {
       if (!args[0])
-        return Miku.sendMessage(
+        return Xtroid.sendMessage(
           m.from,
           { text: `Please provide a Text !` },
           { quoted: m }

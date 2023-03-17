@@ -7,7 +7,7 @@ module.exports = {
   cool: 3,
   react: "🙄",
   category: "Fun",
-  start: async (Miku, m, { text, prefix }) => {
+  start: async (Xtroid, m, { text, prefix }) => {
     const shibam = await axios.get(
       "https://dull-plum-panda-gear.cyclic.app/dare"
     );
@@ -32,6 +32,6 @@ module.exports = {
       headerType: 4,
     };
 
-    await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
+    await Xtroid.sendMessage(m.from, buttonMessage, { quoted: m });
   },
 };

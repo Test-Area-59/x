@@ -7,7 +7,7 @@ module.exports = {
   category: "Weeb",
   usage: `cosplay`,
   react: "🍁",
-  start: async (Miku, m, { prefix }) => {
+  start: async (Xtroid, m, { prefix }) => {
     var cosplayImage = await getBuffer(`https://fantox-cosplay-api.onrender.com/`);
     var cosplayButton = [
       {
@@ -23,7 +23,7 @@ module.exports = {
       buttons: cosplayButton,
       headerType: 4,
     };
-    await Miku.sendMessage(m.from, bmffg, { quoted: m }).catch((err) => {
+    await Xtroid.sendMessage(m.from, bmffg, { quoted: m }).catch((err) => {
       return "Error!";
     });
   },

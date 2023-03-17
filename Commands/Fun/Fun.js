@@ -39,7 +39,7 @@ module.exports = {
   cool: 2,
   react: "🤣",
   category: "Fun",
-  start: async (Miku, m, { pushName, prefix, participants, isGroup }) => {
+  start: async (Xtroid, m, { pushName, prefix, participants, isGroup }) => {
     let member = participants.map((u) => u.id);
     let random = member[Math.floor(Math.random() * member.length)];
     let command_name = m.text.substring(prefix.length).split(" ")[0];
@@ -62,6 +62,6 @@ module.exports = {
       headerType: 4,
     };
 
-    await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
+    await Xtroid.sendMessage(m.from, buttonMessage, { quoted: m });
   },
 };

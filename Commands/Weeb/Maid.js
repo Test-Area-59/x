@@ -6,7 +6,7 @@ module.exports = {
   desc: "Get anime maid girls picture.",
   react: "🥵",
   category: "Weeb",
-  start: async (Miku, m, { pushName, prefix }) => {
+  start: async (Xtroid, m, { pushName, prefix }) => {
     let maids = await axios.get("https://neko-maid-api.onrender.com");
 
     var Button = [
@@ -23,7 +23,7 @@ module.exports = {
       buttons: Button,
       headerType: 4,
     };
-    await Miku.sendMessage(m.from, neko, { quoted: m }).catch((err) => {
+    await Xtroid.sendMessage(m.from, neko, { quoted: m }).catch((err) => {
       return "Error!";
     });
   },

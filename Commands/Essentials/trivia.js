@@ -7,7 +7,7 @@ module.exports = {
   usage: "question easy/medium/hard",
   react: "🍁",
   category: "Essentials",
-  start: async (Miku, m, { pushName, prefix, args, text }) => {
+  start: async (Xtroid, m, { pushName, prefix, args, text }) => {
     if (!args[0])
       return m.reply(
         `Please use this command like this: ${prefix}question easy/medium/hard`
@@ -36,7 +36,7 @@ module.exports = {
           headerType: 4,
         };
 
-        Miku.sendMessage(m.from, buttonMessage, { quoted: m });
+        Xtroid.sendMessage(m.from, buttonMessage, { quoted: m });
       })
       .catch((err) => {
         m.reply(

@@ -11,12 +11,12 @@ module.exports = {
     category: "Economy",  
     react: "💵", 
     start: async ( 
-        Miku, 
+        Xtroid, 
       m, 
       { text, prefix,args} 
     ) => {
         if(!text)  {
-            return Miku.sendMessage( 
+            return Xtroid.sendMessage( 
                 m.from, 
                 { text: `Baka!! Provide the 💰amount you want to deposit!` }, 
                 { quoted: m } 
@@ -48,6 +48,6 @@ module.exports = {
             type: 4
           };
         
-          await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
+          await Xtroid.sendMessage(m.from, buttonMessage, { quoted: m });
         }
     }
