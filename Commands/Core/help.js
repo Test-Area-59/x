@@ -66,7 +66,7 @@ Here's the list of my Commands.\n
            
 ╭──────ꕥ Core ꕥ─────╮
 ├
-├・🎐 ʜɪ, ʜᴇʟᴘ, 
+├・🎐 ʜɪ, x, 
 ├・🎐 ᴄᴏᴜᴘʟᴇᴘᴘ, ᴏᴡɴᴇʀ, 
 ├・🎐 ꜱᴄʀɪᴘᴛ, ꜱᴛᴀʟᴋ, 
 ├・🎐 ꜱᴜᴘᴘᴏʀᴛ, ʀᴀɴᴋ
@@ -75,7 +75,7 @@ Here's the list of my Commands.\n
 ╭─────ꕥ Group ꕥ─────╮
 ├
 ├・🏮 ᴀᴅᴍɪɴꜱ, ᴀɴɴᴏᴜɴᴄᴇ,
-├・🏮 ᴀɴᴛɪʟɪɴᴋɢᴄ, ʙᴏᴛꜱᴡɪᴛᴄʜ, 
+├・🏮 ᴀɴᴛɪʟɪɴᴋɢᴄ, Mode, 
 ├・🏮 ᴄʜᴀɴɢᴇɢᴄɴᴀᴍᴇ, ᴄʜᴀᴛʙᴏᴛɢᴄ, 
 ├・🏮 ᴅᴇʟᴇᴛᴇ, ᴘʀᴏᴍᴏᴛᴇ, 
 ├・🏮 ᴅᴇᴍᴏᴛᴇ, ɢᴄʟɪɴᴋ, 
@@ -121,7 +121,7 @@ Here's the list of my Commands.\n
 ╰──────────────────╯
 ╭────ꕥ Utilities ꕥ────╮
 ├
-├・🎗 ᴇᴍᴏᴊɪᴍɪx, Q / Qᴜᴏᴛᴇ, 
+├・🎗 ᴇᴍᴏᴊɪᴍɪx, Q ,st, 
 ├・🎗 ꜱᴛɪᴄᴋᴇʀ, ꜱᴛɪᴄᴋᴇʀᴄʀᴏᴘ, 
 ├・🎗 ꜱᴛᴇᴀʟ, ᴛᴏᴀᴜᴅɪᴏ, 
 ├・🎗 ᴛᴏᴍᴘ3, ᴛᴏᴍᴘ4, 
@@ -151,15 +151,7 @@ Here's the list of my Commands.\n
 ├・🧩 ꜱᴀʏᴊᴀᴘᴀɴᴇꜱᴇ, ꜱᴀʏʙᴇɴɢᴀʟɪ, 
 ├・🧩 ꜱᴀʏʜɪɴᴅɪ, ᴜᴅɪᴄᴛɪᴏɴᴀʀʏ
 ├
-╰───────────────────────╯
-╭────ꕥ Weeb ꕥ────╮
-├
-├・ 🧧 ᴀɴɪᴍᴇQᴜᴏᴛᴇ, ᴄᴏꜱᴘʟᴀʏ, 
-├・ 🧧 ᴄᴏꜱᴘʟᴀʏᴠɪᴅᴇᴏ, ꜰᴏxɢɪʀʟ, 
-├・ 🧧 ᴍᴀɪᴅ, ᴡᴀʟʟᴘᴀᴘᴇʀ, 
-├・ 🧧 ᴡᴀɪꜰᴜ
-├
-╰──────────────────╯
+╰──────────────────────╯
 ╭────ꕥ Reactions ꕥ────╮
 ├
 ├・ 🎋 ʙᴇʜᴀᴘᴘʏ, ʙɪᴛᴇ, 
@@ -235,13 +227,10 @@ Here's the list of my Commands.\n
       }
 
       textHelpMenu += `*🔰  ${botName}  🔰*
- _Powered By:_ *Team ATLAS*
-
-🎀 To use any of these commands type " *${prefix}Command name* ".
 
 🏮 To get Support Group link type " *${prefix}support* ".
 
-🧩 To report any issues to Developer type " *${prefix}report <describe issue>* ".\n`;
+🧩 To report any issues to Developer" *${prefix}report <describe issue>* ".\n`;
 
       let favSongs = [
         "dandilions",
